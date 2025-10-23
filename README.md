@@ -3,11 +3,11 @@
 方式一：直接下载使用（推荐）
 
 # 下载主程序文件
-wget https://raw.githubusercontent.com/194268/spf-email-scanner/main/spf_scanner.py
+wget https://raw.githubusercontent.com/194268/spf-email-scanner/main/spfscan.py
 
 或者使用curl
 
-curl -O https://raw.githubusercontent.com/194268/spf-email-scanner/main/spf_scanner.py
+curl -O https://raw.githubusercontent.com/194268/spf-email-scanner/main/spfscan.py
 
 方式二：克隆整个仓库
 
@@ -39,7 +39,7 @@ pip install dnspython
 
    python spf_scanner.py -f domains.txt --to-addr your-email@example.com
    
-3. 完整参数示例
+3.完整参数示例
    
    python spf_scanner.py \
    
@@ -55,21 +55,21 @@ pip install dnspython
   
 # ⚙️ 参数详解
 
--f, --file	域名列表文件路径		-f domains.txt
+-f,--file	      域名列表文件路径	                      -f       domains.txt
 
---to-addr	接收测试邮件的邮箱地址		--to-addr test@example.com
+--to-addr	      接收测试邮件的邮箱地址		            --to-addr test@example.com
 
---subject	邮件主题		--subject "测试邮件"
+--subject	      邮件主题		                           --subject "测试邮件"
 
---body	邮件内容		--body "测试内容"
+--body	         邮件内容		                           --body "测试内容"
 
--v, --verbose	输出详细程度：0-简洁 1-正常 2-详细		-v 2
+-v, --verbose	   输出详细程度：0-简洁 1-正常 2-详细		-v 2
 
---test-all	测试所有域名（默认只测试有漏洞的）		--test-all
+--test-all	      测试所有域名（默认只测试有漏洞的）		--test-all
 
---smtp-user	SMTP用户名（如需认证）		--smtp-user username
+--smtp-user	      SMTP用户名（如需认证）		            --smtp-user username
 
---smtp-pass	SMTP密码（如需认证）		--smtp-pass password
+--smtp-pass	      SMTP密码（如需认证）		                 --smtp-pass password
 
--c, --crazy-mode	持续发送模式		-c
+-c, --crazy-mode	持续发送模式		                        -c
    
